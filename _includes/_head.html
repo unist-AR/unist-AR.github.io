@@ -4,15 +4,13 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} :: {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ page.title }} :: {{ site.title }}
     {% endif %}
   </title>
 
-<!-- Social Metadata -->
-
-  <meta content="your_facebook_app_id" property="fb:app_id">
+  <!-- Social Metadata -->
   <meta content="{{ site.title }}" property="og:site_name">
   {% if post.title %}
     <meta content="{{ post.title }}" property="og:title">
@@ -37,36 +35,18 @@
     <meta content="{{site.baseurl}}/about/" property="article:author">
   {% endif %}
   {% if post.img %}
-    <meta content="/img/{{ post.img }}" property="og:image">
+    <meta content="{{ site.baseurl }}/img/{{ post.img }}" property="og:image">
   {% else %}
-    <meta content="/img/logo.png" property="og:image">
-  {% endif %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{site.owner.twitter}}">
-  <meta name="twitter:creator" content="@{{site.owner.twitter}}">
-  {% if post.title %}
-    <meta name="twitter:title" content="{{ post.title }}">
-  {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-  {% endif %}
-  {% if post.url %}
-    <meta name="twitter:url" content="{{site.baseurl}}{{ post.url }}">
-  {% endif %}
-  {% if post.description %}
-    <meta name="twitter:description" content="{{ post.description }}">
-  {% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  {% if post.header-img %}
-    <meta name="twitter:image:src" content="{{site.baseurl}}/{{ post.img }}">
+    <meta content="{{ site.baseurl }}/img/og_image.png" property="og:image">
   {% endif %}
 
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   
   <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
   <script src="{{ site.baseurl }}/js/modernizr.js"></script> 
-  
+  <script src="{{ site.baseurl }}/js/jquery-2.1.4.js"></script>
 
 
 </head>
