@@ -196,6 +196,7 @@ blockquote p {
 
 ul, ol {
   margin-bottom:2em;
+  margin-left:2em;
 }
 
 article.post ul {
@@ -571,4 +572,12 @@ nav a:hover {
   nav {
     margin:0 auto;
   }
+}
+
+/* CUSTOM */
+.paper-citation {
+  color: #b3b3b3;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0;     
 }
