@@ -77,8 +77,38 @@ $('#calendar').fullCalendar({
           allDay: true, // If false, then it shows "time" content 
           color: '#4db6ac'
         }, // Don't forget Comma(,)!!!
-        */      
+        */  
+        {
+          title: '1st prototype and experiment',
+          start: '2018-04-23',
+          end: '2018-05-10',
+          allDay: true,
+          color: '#ffeb3b',
+        },  
+        {
+          title: '2nd prototype and experiment',
+          start: '2018-05-10',
+          end: '2018-05-26',
+          allDay: true,
+          color: '#fdd835',
+        }, 
+        {
+          title: 'Result analysis',
+          start: '2018-05-28',
+          end: '2018-06-07',
+          allDay: true,
+          color: '#fbc02d',
+        },
+        {
+          title: 'Final report',
+          start: '2018-06-07',
+          end: '2018-06-15',
+          allDay: true,
+          color: '#f9a825',
+        },  
       ],
+      
+      textColor: 'black'
     }
   ],
 });
