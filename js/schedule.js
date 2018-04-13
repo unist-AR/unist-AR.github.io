@@ -42,7 +42,7 @@ $('#calendar').fullCalendar({
       var events = repeatingEvents('Meeting with mentors', '17:20', '18:00', [3], '#4caf50');
       callback(events);
     }, 
-    {
+    { // Capstone Design official schedule
       events: [
         {
           title: 'Project Topic Presentation',
@@ -66,6 +66,19 @@ $('#calendar').fullCalendar({
         },        
       ],
       color: '#f44336' // red
+    },
+    { // Our schedule for project
+      events: [
+        /* Sample event
+        {
+          title: 'Sample Event',
+          start: 'yyyy-mm-dd',  // If you want to add "time", then yyyy-mm-ddThh:mm (ex. 2018-04-13T23:45)
+          end: 'yyyy-mm-dd',
+          allDay: true, // If false, then it shows "time" content 
+          color: '#4db6ac'
+        }, // Don't forget Comma(,)!!!
+        */      
+      ],
     }
   ],
 });
