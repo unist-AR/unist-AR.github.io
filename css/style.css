@@ -581,6 +581,9 @@ nav a:hover {
 .articles h3 {
   margin-top: 2em;
 }
+aside h3 {
+  margin-top: 0 !important;
+}
 .paper-citation {
   color: #b3b3b3;
   font-style: italic;
