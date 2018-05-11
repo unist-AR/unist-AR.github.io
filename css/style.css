@@ -195,7 +195,7 @@ blockquote p {
 }
 
 ul, ol {
-  margin-bottom:2em;
+  /* margin-bottom:2em; */
   margin-left:2em;
 }
 
@@ -206,9 +206,11 @@ article.post ol {
   list-style: initial;
 }
 
+/*
 figure {
   margin: 33px 0;
 }
+*/
 
 figure figcaption {
   font-size: 12px;
@@ -362,7 +364,7 @@ Articles
   font-weight: 400;
 }
 .articles p {
-  padding: 1em 0;
+  /* padding: 1em 0; */
   line-height: 1.6;
   font-weight: 400;
 }
@@ -575,9 +577,28 @@ nav a:hover {
 }
 
 /* CUSTOM */
+.articles h2,
+.articles h3 {
+  margin-top: 2em;
+}
 .paper-citation {
   color: #b3b3b3;
   font-style: italic;
   font-size: 1.2rem;
   margin-top: 0;     
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
+}
+.underline {
+  text-decoration: underline;
+}
+.task-list {
+  margin-left: 0px;
+}
+.task-list-item {
+  list-style-type: none;
+  padding-left: 0px;
 }
