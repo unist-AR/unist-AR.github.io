@@ -124,5 +124,10 @@ jQuery(document).ready(function($){
 
 	function checkMQ() {
 		return window.getComputedStyle(articlesWrapper.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
-	}
+	}	
+});
+
+// Custom
+$(window).on('resize scroll', function() {
+	$('video').width($('article').width())
 });
